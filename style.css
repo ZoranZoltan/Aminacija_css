@@ -1,0 +1,162 @@
+/* Animacija krugova*/
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    perspective: 4000;
+    perspective-origin: 50% 0%;
+}
+
+.text {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.svi {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -200px;
+}
+
+.krugovi {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transform-style: preserve-3d;
+}
+
+.krug {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    border: 15px solid #cfd9db;
+    border-radius: 50%;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.k1 {
+    border: 15px solid #6ab5c4;
+    border-color: #498696;
+    box-shadow: 0 1px 0 #cfd9db, inset 0 5px 0 #cfd9db, inset 0 10px 0 #cfd9db, 0 5px 0 #cfd9db, 0 10px 0 #cfd9db;
+    width: 400px;
+    height: 400px;
+    transform: rotateX(70deg) translate3d(0px, 0px, -30px);
+    animation: slucaj1 2s ease-in-out -0ms infinite alternate;
+}
+
+@keyframes slucaj1 {
+    100% {
+        transform: rotateX(70deg) translate3d(0px, 0px, 100px);
+    }
+}
+
+.k2 {
+    border: 15px solid #db3b3b;
+    border-color: rgb(180, 57, 57);
+    box-shadow: 0 1px 0 white, inset 0 5px 0 #8abbbf, inset 0 10px 0 #8abbbf, 0 5px 0 #8abbbf, 0 10px 0 #8abbbf;
+    width: 340px;
+    height: 340px;
+    transform: rotateX(70deg) translate3d(30px, 0px, -60px);
+    animation: slucaj2 2s ease-in-out -400ms infinite alternate;
+}
+
+@keyframes slucaj2 {
+    100% {
+        transform: rotateX(70deg) translate3d(30px, 0px, 70px);
+    } 
+}
+
+.k3 {
+    border: 15px solid #a025a0;
+    border-color:rgba(161, 13, 161, 0.4);
+    box-shadow: 0 1px 0 white inset 0 5px 0 #8abbbf, inset 0 10px 0 #8abbbf, 0 5px 0 #b7c6ca, 0 10px 0 #b7c6ca;
+    width: 280px;
+    height: 280px;
+    transform: rotateX(70deg) translate3d(60px, 0px, -90px);
+    animation: slucaj3 2s ease-in-out -800ms infinite alternate;
+}
+
+@keyframes slucaj3 {
+    100% {
+        transform: rotateX(70deg) translate3d(60px, 0px, 40px);
+    }
+}
+
+.k4 {
+    border: 15px solid #22b60e;
+    border-color: rgba(14, 177, 49, 0.467);
+    box-shadow: 0 1px 0 white, inset 0 5px 0 #a6b8bd, inset 0 10px 0 #a6b8bd, 0 5px 0 #b4c4c8, 0 10px 0 #b4c4c8;
+    width: 220px;
+    height: 220px;
+    transform: rotateX(70deg) translate3d(90px, 0px, -120px);
+    animation: slucaj4 2s ease-in-out -1200ms infinite alternate;
+}
+
+@keyframes slucaj4 {
+    100% {
+        transform: rotateX(70deg) translate3d(90px, 0px, 10px);
+    } 
+}  
+
+.k5 { 
+    border: 15px solid #4338d8;
+    border-color: #4960aa;
+    box-shadow: 0 1px 0 white, inset 0 5px 0px #a3b6bb, inset 0 10px 0px #a3b6bb, 0 5px 0 #b1c2c6, 0 10px 0 #b1c2c6;
+    width: 160px;
+    height: 160px;
+    transform: rotateX(70deg) translate3d(120px, 0px, -150px);
+    animation: slucaj5 2s ease-in-out -1600ms infinite alternate;
+}
+
+@keyframes slucaj5 {
+    100% {
+        transform: rotateX(70deg) translate3d(120px, 0px, -20px);
+    }
+}
+
+.k6 {
+border: 15px solid #e2d40a;
+border-color: #f4f811;
+box-shadow: 0 1px 0 white, inset 0 5px 0px #a0b4b9, inset 0 10px 0px #a0b4b9, 0 5px 0 #aebfc4, 0 10px 0 #aebfc4;
+width: 100px;
+height: 100px;
+transform: rotateX(70deg) translate3d(150px, 0, -180px);
+animation: slucaj6 2s ease-in-out -2000ms infinite alternate;
+}
+
+@keyframes slucaj6 {
+    100% {
+        transform: rotateX(70deg) translate3d(150px, 0px, -50px);
+    }
+}
+
+.k7 {
+    border: 15px solid #d68a94;
+    border-color: rgb(157, 231, 157);
+    box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7, 0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
+    width: 40px;
+    height: 40px;
+    transform: rotateX(70deg) translate3d(180px, 0px, -210px);
+    animation: slucaj7 2s ease-in-out -2400ms infinite alternate;
+}
+
+@keyframes slucaj7 {
+    100% {
+        transform: rotateX(70deg) translate3d(180px, 0px, -80px);
+    }
+}
+
